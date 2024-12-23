@@ -1,0 +1,30 @@
+https://www.jsonplaceholder.org/ - фейковый API
+https://jsonplaceholder.typicode.com/ 
+
+https://jsonplaceholder.typicode.com/users - пример endpoint'a
+
+JSON Viewer - расширение для Google
+
+Теперь, если написать java script, который через fetch 
+отправить get-запрос к https://jsonplaceholder.typicode.com/todos
+То в Консоли, вкладка Network, Fech/XHR позволит отследить запрос fetch (JavaScript)
+к https://jsonplaceholder.typicode.com/todos
+Увидим, что fetch отправил запрос (вкладка Headers) 
+на https://jsonplaceholder.typicode.com/todos 
+а в ответ получи json (вкладка Response и Preview)
+
+
+const todosEndpoint = 'https://jsonplaceholder.typicode.com/todos';
+
+const fetchTodos = async () => {
+       const res = await fetch(todosEndpoint);
+      const todos = await res.json();
+     return await res.json();
+    //console.log(todos[0]); // также и отобразить пришедший json в консоли
+}
+getTodos();
+
+Таким образом на клиенте есть свои инструменты для обращения
+и получения данных от API, например fetch или ajax (JS), 
+есть также curl (PHP)
+ 
