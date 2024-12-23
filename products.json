@@ -1,0 +1,24 @@
+[
+    {
+        "id" : 100,
+        "name": "iPhone 4s",
+        "price": 19990.00,
+        "total": 32,
+        "tags": ["телефон", "новый", "apple"]
+    },
+    {
+        "id" : 101,
+        "name": "iPhone 4s",
+        "price": 26990.00,
+        "total": 7,
+        "tags": ["планшет", "apple"]
+    },
+    {
+        "id" : 102,
+        "name": "JBS наушники",
+        "price": 6990.00,
+        "total": 55,
+        "tags": ["нашники", "jbl"]
+    }
+
+]
